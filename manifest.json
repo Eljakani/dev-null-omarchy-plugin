@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "devnull.log",
+  "name": "dev/null Log",
+  "version": "1.0.0",
+  "author": "Eljakani",
+  "license": "MIT",
+  "repository": "https://github.com/Eljakani/dev-null-omarchy-plugin",
+  "description": "Theme-aware dev/null notifications and log in the Omarchy bar",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "BarWidget.qml" },
+  "barWidget": {
+    "displayName": "dev/null Log",
+    "description": "Account notifications and recent commits from developers you choose",
+    "category": "Social",
+    "allowMultiple": false,
+    "defaultSection": "center",
+    "defaults": { "usernames": "nunomaduro,brendt,paulinevos" },
+    "schema": [
+      { "key": "usernames", "type": "string", "label": "Usernames (comma separated)" }
+    ]
+  }
+}
